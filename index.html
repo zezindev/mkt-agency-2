@@ -1,11 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <div></div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="page">
+      <header id="main-header">
+        <a href="index.html"><img src="./imgs/ast-main.png" id="logo" /></a>
+        <nav>
+          <div class="mobile-menu">
+            <i class="fa-solid fa-bars" id="icon"></i>
+          </div>
+          <ul class="nav-list" id="menu">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">SERVIÇOS</a></li>
+            <li><a href="#">SOBRE NÓS</a></li>
+            <li><a href="#" class="btn">CONTATO</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="div-main">
+        <div class="div-main-content">
+          <h1>Marketing Digital</h1>
+          <p>Alcance o seu máximo potencial online</p>
+          <a href="#">SAIBA MAIS</a>
+        </div>
+
+        <div class="div-img-main">
+          <img src="/imgs/ast-main.png" alt="" id="ast-first" />
+        </div>
+      </div>
+
+      <section class="section-serv-card-container">
+        <h1>Nossas soluções para você</h1>
+        <div class="serv-card-container">
+          <div class="serv-cards">
+            <img src="/imgs/cart.png" alt="" />
+            <h3>Criação de eCommerce</h3>
+            <p>Criamos a sua loja online para você escalar suas vendas</p>
+          </div>
+          <div class="serv-cards">
+            <img src="/imgs/pc.png" alt="" />
+            <h3>Criação de Sites</h3>
+            <p>Tenha um site otimizado e com a cara da sua marca online</p>
+          </div>
+          <div class="serv-cards">
+            <img src="/imgs/socia-icon.png" alt="" />
+            <h3>Gerenciamento de Redes Socias</h3>
+            <p>
+              Cuidamos de suas redes socias mantendo elas sempre atualizadas
+            </p>
+          </div>
+          <div class="serv-cards">
+            <img src="/imgs/cell.png" alt="" />
+            <h3>Produção de Conteúdo</h3>
+            <p>
+              Não deixe de postar! Nós criamos pra você o conteúdo pra suas
+              redess
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section >
+        <!-- <img src="/imgs/waves-img.png" alt="" id="waves-img" /> -->
+        <div class="div-second" id="waves-img-bg">
+          <div class="div-second-content">
+            <h1><img src="/imgs/info.png" alt="" id="info"> Sobre nós</h1>
+            <p>
+              Somos uma startup focada em estratégias voltadas para o <br> maior 
+              alcance e relevância nas plataformas digitais e <br> buscadores web.<br><br>
+              Com anos de atuação na área das redes sociais e construção <br> de
+              sites, a Viral+ tem ajudado seus clientes a engajarem nas <br>redes
+              sociais e se posicionar da melhor maneira ante um <br> mercado
+              competitivo e voraz. <br><br>Nossa expertise em estratégias de marketing<br>
+              digital, tem trazido resultados fora da curva para nossos
+              clientes.
+            </p>
+          </div>
+
+          <div class="div-img-second">
+            <img src="/imgs/ast-second.png" alt="" id="ast-second" />
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="/menu.js"></script>
+    <script src="/header.js"></script>
+  </body>
 </html>
