@@ -16,15 +16,15 @@
   --fs-header-sm: clamp(2rem, 0.5rem + 3vw, 3rem);
 }
 
-/* ::-webkit-scrollbar {
+::-webkit-scrollbar {
   width: 10px;
-  background-color: #100515;
+  background-color: #fefefe;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(150deg, #16026b, #7f03bb, #ed4101);
+  background: #6563bd;
   border-radius: 10px;
-} */
+}
 
 body {
   background-color: #fefefe;
@@ -330,7 +330,6 @@ ul li a {
     border-radius: 0;
     width: 100%;
 
-
     z-index: -1;
   }
 
@@ -414,7 +413,8 @@ ul li a {
     gap: 2%;
   }
 
-  .div-second h1{
+  .div-second h1 {
+    padding-top: 5rem;
     align-self: flex-start;
   }
 
@@ -423,6 +423,11 @@ ul li a {
   }
 }
 
+/* @media screen and (max-width: 450px) {
+  .div-second {
+    height: 120vh;
+  }
+} */
 .nav-list.active {
   transform: translateX(0);
 }
