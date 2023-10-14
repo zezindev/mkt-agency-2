@@ -410,7 +410,7 @@ ul li a {
     height: 140vh;
     width: 100%;
 
-    gap: 2%;
+    /* gap: 2%; */
   }
 
   .div-second h1 {
@@ -425,7 +425,7 @@ ul li a {
 
 @media screen and (max-width: 450px) {
   .div-second {
-    height: 160vh;
+    height: 180vh;
   }
 }
 
