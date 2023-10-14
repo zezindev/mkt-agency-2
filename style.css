@@ -281,6 +281,8 @@ ul li a {
     font-size: 2rem;
 
     color: var(--color-secondary);
+
+    z-index: 99;
   }
 
   .nav-list {
@@ -328,6 +330,9 @@ ul li a {
     background-image: url(/imgs/base-back-tablet.png);
     border-radius: 0;
     width: 100%;
+
+
+    z-index: -1;
   }
 
   .div-main-content {
