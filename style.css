@@ -423,11 +423,12 @@ ul li a {
   }
 }
 
-/* @media screen and (max-width: 450px) {
+@media screen and (max-width: 450px) {
   .div-second {
-    height: 120vh;
+    height: 160vh;
   }
-} */
+}
+
 .nav-list.active {
   transform: translateX(0);
 }
