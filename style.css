@@ -110,8 +110,7 @@ ul li a {
   height: 90vh;
   width: 97%;
 
-  background-image: url(/imgs/base-back.png);
-  object-fit: fill;
+  background-image: url(./imgs/base-back.png);
   border-radius: 0 20rem 20rem 0;
 }
 
@@ -193,7 +192,7 @@ ul li a {
 }
 
 #waves-img-bg {
-  background-image: url(/imgs/waves-img-2.png);
+  background-image: url(./imgs/waves-img-2.png);
   object-fit: cover;
   background-repeat: no-repeat;
 }
@@ -327,7 +326,7 @@ ul li a {
     flex-direction: column-reverse;
     gap: 10%;
 
-    background-image: url(/imgs/base-back-tablet.png);
+    background-image: url(./imgs/base-back-tablet.png);
     border-radius: 0;
     width: 100%;
 
