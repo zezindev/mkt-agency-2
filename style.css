@@ -223,7 +223,7 @@ i {
   display: flex;
   justify-content: center;
 
-  font-size: var(--fs-header-sm);
+  font-size: var(--fs-header);
   color: var(--color-terciary);
   padding-top: 5rem;
 }
@@ -303,7 +303,7 @@ i {
   color: var(--color-primary);
 
   transition: transform 0.3s ease-out;
-  transform: translateY(0);
+  transform: translateX(0);
 }
 
 .pl-cards:hover {
@@ -356,6 +356,13 @@ i {
   text-align: center;
 
   position: relative;
+
+  transition: transform 0.3s ease-out;
+  transform: translateY(0);
+}
+
+.testimony-card:hover {
+  transform: translateY(-7px);
 }
 
 .testimony-card i {
@@ -385,9 +392,9 @@ i {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .div-second-content h1 {
+  /* .div-second-content h1 {
     font-size: var(--fs-header-sm);
-  }
+  } */
 
   .div-second-content p {
     font-size: var(--fs-body);
@@ -462,9 +469,9 @@ i {
     width: 100%;
   }
 
-  .div-main-content h1 {
+  /* .div-main-content h1 {
     font-size: var(--fs-header-sm);
-  }
+  } */
 
   .div-main-content p {
     font-size: var(--fs-body);
@@ -499,9 +506,9 @@ i {
     width: 80%;
   }
 
-  .div-second-content h1{
+  /* .div-second-content h1 {
     font-size: var(--fs-header-sm);
-  }
+  } */
 
   .div-second-content p {
     font-size: var(--fs-body);
@@ -538,6 +545,9 @@ i {
     flex: 0 0 calc(100% - 20px);
   }
 
+  .testimony-card img {
+    width: 70%;
+  }
 }
 
 @media screen and (max-width: 600px) {
