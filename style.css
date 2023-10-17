@@ -12,8 +12,9 @@
 
   font-size: 62.5%;
   --fs-body: 1.6rem;
-  --fs-header: clamp(4rem, 1rem + 5vw, 8rem);
-  --fs-header-sm: clamp(2rem, 0.5rem + 3vw, 3rem);
+  --fs-header-m: clamp(4rem, 1rem + 5vw, 8rem);
+  --fs-header: clamp(2rem, 1rem + 5vw, 4rem);
+  --fs-header-sm: clamp(1.5rem, 0.5rem + 3vw, 2.5rem);
 }
 
 ::-webkit-scrollbar {
@@ -84,6 +85,10 @@ ul li a {
   font-size: var(--fs-body);
 }
 
+i {
+  color: var(--color-secondary);
+}
+
 .mobile-menu {
   display: none;
 }
@@ -127,7 +132,7 @@ ul li a {
 
 .div-main-content h1 {
   font-weight: 500;
-  font-size: var(--fs-header);
+  font-size: var(--fs-header-m);
 }
 
 .div-main-content p {
@@ -199,7 +204,7 @@ ul li a {
 
 .div-second-content h1 {
   font-weight: 700;
-  font-size: 5.5rem;
+  font-size: var(--fs-header);
 }
 
 .div-second-content p {
@@ -266,17 +271,14 @@ ul li a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-
-}
-#pl-img{
-  width: 5rem;
 }
 
-.pl-grid-section h1{
-  align-self: center;
+.pl-grid-section h1 {
+  align-self: flex-start;
   margin-bottom: 5rem;
 
-  font-size: var(--fs-header-sm);
+  font-size: var(--fs-header);
+  color: var(--color-terciary);
 }
 
 .pl-grid-container {
@@ -287,14 +289,95 @@ ul li a {
 
 .pl-cards {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 
   gap: 2rem;
-  background-color: #3d10e2;
+  background-color: var(--color-terciary);
   border-radius: 1rem;
-  padding: 4rem 0;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 4rem;
+  box-shadow: 0 0.4rem 0.6rem rgba(0, 0, 0, 0.3);
+
+  font-size: var(--fs-header-sm);
+  text-decoration: none;
+  color: var(--color-primary);
+
+  transition: transform 0.3s ease-out;
+  transform: translateY(0);
+}
+
+.pl-cards:hover {
+  background-color: #2f2da7;
+  transform: translateX(7px);
+}
+
+.pl-cards i {
+  font-size: 200%;
+}
+
+.testimony-section {
+  background-image: url(./imgs/base-back.png);
+  height: 95vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimony-section h1 {
+  position: absolute;
+  align-self: flex-start;
+  padding: 8rem 0;
+  left: 10%;
+
+  font-size: var(--fs-header);
+  color: var(--color-primary);
+}
+
+.testimony-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  padding: 0 10%;
+}
+
+.testimony-card {
+  flex: 0 0 calc(33.333% - 20px);
+  margin-top: 9rem;
+  padding: 4rem 5rem 2rem;
+
+  background-color: var(--color-primary);
+  color: var(--color-terciary);
+  font-weight: 800;
+
+  border-radius: 1rem;
+  box-shadow: 0 0.4rem 0.6rem rgba(0, 0, 0, 0.3);
+  text-align: center;
+
+  position: relative;
+}
+
+.testimony-card i {
+  position: absolute;
+  top: -7rem;
+  left: 10%;
+
+  font-size: 12rem;
+}
+
+.testimony-card p {
+  font-size: var(--fs-body);
+  margin-bottom: 2rem;
+}
+
+.testimony-card img {
+  width: 50%;
+  border-radius: 100%;
+}
+
+.testimony-card h3 {
+  font-size: var(--fs-body);
 }
 
 @media screen and (max-width: 1010px) {
@@ -437,6 +520,24 @@ ul li a {
   .pl-grid-container {
     grid-template-columns: 1fr;
   }
+
+  .pl-cards {
+    font-size: var(--fs-body);
+  }
+
+  .testimony-section {
+    background-image: url(./imgs/base-mobile.png);
+    height: 250vh;
+  }
+
+  .testimony-container {
+    flex-direction: column;
+  }
+
+  .testimony-card {
+    flex: 0 0 calc(100% - 20px);
+  }
+
 }
 
 @media screen and (max-width: 600px) {
@@ -459,6 +560,10 @@ ul li a {
 
   .div-img-second img {
     width: 80%;
+  }
+
+  .pl-cards i {
+    padding-left: 0;
   }
 }
 
