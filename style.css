@@ -392,10 +392,6 @@ i {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  /* .div-second-content h1 {
-    font-size: var(--fs-header-sm);
-  } */
-
   .div-second-content p {
     font-size: var(--fs-body);
   }
@@ -469,10 +465,6 @@ i {
     width: 100%;
   }
 
-  /* .div-main-content h1 {
-    font-size: var(--fs-header-sm);
-  } */
-
   .div-main-content p {
     font-size: var(--fs-body);
   }
@@ -505,10 +497,6 @@ i {
 
     width: 80%;
   }
-
-  /* .div-second-content h1 {
-    font-size: var(--fs-header-sm);
-  } */
 
   .div-second-content p {
     font-size: var(--fs-body);
@@ -578,7 +566,11 @@ i {
 
   .testimony-section {
     background-image: url(./imgs/base-mobile.png);
-    height: 310vh;
+    height: 320vh;
+  }
+
+  .testimony-card i {
+    font-size: 9rem;
   }
 }
 
