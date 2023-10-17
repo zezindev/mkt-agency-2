@@ -89,6 +89,10 @@ i {
   color: var(--color-secondary);
 }
 
+span {
+  color: var(--color-secondary);
+}
+
 .mobile-menu {
   display: none;
 }
@@ -225,7 +229,7 @@ i {
 
   font-size: var(--fs-header);
   color: var(--color-terciary);
-  padding-top: 5rem;
+  padding: 5rem;
 }
 
 .serv-card-container {
@@ -275,7 +279,7 @@ i {
 
 .pl-grid-section h1 {
   align-self: flex-start;
-  margin-bottom: 5rem;
+  margin: 5rem 0;
 
   font-size: var(--fs-header);
   color: var(--color-terciary);
@@ -387,6 +391,64 @@ i {
   font-size: var(--fs-body);
 }
 
+.why-div-section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  padding: 5rem 10%;
+}
+
+.why-div-section h1 {
+  align-self: flex-start;
+  font-size: var(--fs-header);
+
+  padding-bottom: 5rem;
+
+  color: var(--color-terciary);
+}
+
+.why-div-container {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 5rem;
+}
+
+.why-div-content {
+  display: flex;
+  flex-direction: column;
+
+  width: 50%;
+}
+
+.why-div-content h1 {
+  font-size: 2.4rem;
+}
+
+.why-div-content p {
+  font-size: var(--fs-body);
+  color: var(--color-terciary);
+}
+
+.why-div-img {
+  width: 40%;
+}
+
+.why-div-img img {
+  width: 100%;
+}
+
+@media screen and (max-width: 1350px) {
+  .why-div-img {
+    width: 50%;
+  }
+
+  .why-div-img img {
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 1010px) {
   .serv-card-container {
     grid-template-columns: repeat(2, 1fr);
@@ -394,6 +456,38 @@ i {
 
   .div-second-content p {
     font-size: var(--fs-body);
+  }
+
+  .testimony-section {
+    background: var(--color-terciary);
+    height: 210vh;
+  }
+
+  .testimony-container {
+    flex-direction: column;
+  }
+
+  .testimony-card {
+    width: 70%;
+  }
+
+  .why-div-container {
+    flex-direction: column;
+  }
+
+   .why-div-content {
+    width: 100%;
+  }
+
+  .why-div-img {
+    margin: auto;
+    width: 70%;
+    margin-top: 5rem;
+  }
+
+  .why-div-img img{
+    width: 100%;
+    margin: auto;
   }
 }
 
@@ -450,7 +544,7 @@ i {
     flex-direction: column-reverse;
     gap: 10%;
 
-    background-image: url(./imgs/base-back-tablet.png);
+    background: var(--color-terciary);
     border-radius: 0;
     width: 100%;
 
@@ -488,6 +582,12 @@ i {
   .div-second {
     flex-direction: column;
     gap: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 112vh;
+    width: 100%;
   }
 
   .div-second-content {
@@ -521,8 +621,7 @@ i {
   }
 
   .testimony-section {
-    background-image: url(./imgs/base-mobile.png);
-    height: 250vh;
+    height: 225vh;
   }
 
   .testimony-container {
@@ -530,26 +629,27 @@ i {
   }
 
   .testimony-card {
-    flex: 0 0 calc(100% - 20px);
+    width: 70%;
   }
 
   .testimony-card img {
     width: 70%;
   }
+
+  .testimony-card i {
+    top: -4rem;
+
+    font-size: 7rem;
+  }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 670px) {
   .serv-card-container {
     grid-template-columns: 1fr;
   }
 
   .div-second {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
     height: 140vh;
-    width: 100%;
   }
 
   .div-second h1 {
@@ -564,19 +664,72 @@ i {
     padding-left: 0;
   }
 
-  .testimony-section {
-    background-image: url(./imgs/base-mobile.png);
-    height: 320vh;
+  .testimony-section h1 {
+    padding: 8rem 0 20rem 0;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .div-second {
+    height: 170vh;
   }
 
-  .testimony-card i {
-    font-size: 9rem;
+  .testimony-card {
+    width: 100%;
   }
 }
 
 @media screen and (max-width: 450px) {
   .div-second {
-    height: 190vh;
+    height: 150vh;
+  }
+
+  .testimony-section {
+    height: 250vh;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  .div-second {
+    height: 137vh;
+  }
+}
+
+@media screen and (max-width: 395px) {
+  .div-second {
+    height: 155vh;
+  }
+
+  .testimony-section {
+    height: 270vh;
+  }
+}
+
+@media screen and (max-width: 385px) {
+  .div-second {
+    height: 155vh;
+  }
+
+  .testimony-section {
+    height: 282vh;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .div-main {
+    height: 150vh;
+  }
+
+  .div-second-content {
+    padding: 0;
+  }
+
+  .div-second {
+    height: 220vh;
+  }
+
+  .testimony-section {
+    height: 420vh;
   }
 }
 
