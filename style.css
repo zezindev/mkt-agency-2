@@ -499,7 +499,7 @@ i {
     width: 80%;
   }
 
-  .div-second-content h1 #info {
+  .div-second-content h1{
     font-size: var(--fs-header-sm);
   }
 
