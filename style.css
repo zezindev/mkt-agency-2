@@ -643,7 +643,7 @@ span {
   }
 }
 
-@media screen and (max-width: 670px) {
+@media screen and (max-width: 750px) {
   .serv-card-container {
     grid-template-columns: 1fr;
   }
@@ -707,11 +707,11 @@ span {
 
 @media screen and (max-width: 385px) {
   .div-second {
-    height: 155vh;
+    height: 165vh;
   }
 
   .testimony-section {
-    height: 282vh;
+    height: 295vh;
   }
 }
 
