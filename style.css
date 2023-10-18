@@ -14,7 +14,7 @@
   --fs-body: 1.6rem;
   --fs-header-m: clamp(4rem, 1rem + 5vw, 8rem);
   --fs-header: clamp(2rem, 1rem + 5vw, 4rem);
-  --fs-header-sm: clamp(1.5rem, 0.5rem + 3vw, 2.5rem);
+  --fs-header-sm: clamp(1rem, 0.5rem + 3vw, 2rem);
 }
 
 ::-webkit-scrollbar {
@@ -226,10 +226,16 @@ span {
 .section-serv-card-container h1 {
   display: flex;
   justify-content: center;
+  text-align: center;
+  align-items: center;
 
   font-size: var(--fs-header);
   color: var(--color-terciary);
-  padding: 5rem;
+  padding: 5rem 0;
+}
+
+.section-serv-card-container i {
+  padding-right: 0.5rem;
 }
 
 .serv-card-container {
@@ -412,15 +418,19 @@ span {
   display: flex;
   justify-content: center;
 
-  margin-top: 5rem;
+  margin-top: 13rem;
 }
 
 .why-div-content {
   display: flex;
   flex-direction: column;
 
-  width: 50%;
+  width: 40%;
 }
+
+/* .why-div-content .white-color {
+  color: var(--color-primary);
+} */
 
 .why-div-content h1 {
   font-size: 2.4rem;
@@ -432,14 +442,38 @@ span {
 }
 
 .why-div-img {
-  width: 40%;
+  width: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .why-div-img img {
-  width: 100%;
+  width: 80%;
 }
 
-@media screen and (max-width: 1350px) {
+#padlock {
+  width: 40%;
+  align-self: center;
+}
+
+#target {
+  width: 40%;
+  align-self: center;
+}
+
+#trapeze {
+  position: absolute;
+  left: 0;
+
+  width: 87%;
+
+  margin-top: 100rem;
+  z-index: -1;
+}
+
+@media (max-width: 1350px) {
   .why-div-img {
     width: 50%;
   }
@@ -449,7 +483,7 @@ span {
   }
 }
 
-@media screen and (max-width: 1010px) {
+@media (max-width: 1010px) {
   .serv-card-container {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -475,7 +509,7 @@ span {
     flex-direction: column;
   }
 
-   .why-div-content {
+  .why-div-content {
     width: 100%;
   }
 
@@ -485,13 +519,27 @@ span {
     margin-top: 5rem;
   }
 
-  .why-div-img img{
+  .why-div-img img {
     width: 100%;
     margin: auto;
   }
 }
 
-@media screen and (max-width: 830px) {
+@media (max-width: 912px) and (min-width: 900px) {
+  .div-main {
+    height: 70vh;
+  }
+
+  .div-second {
+    height: 90vh;
+  }
+
+  .testimony-section {
+    height: 140vh;
+  }
+}
+
+@media (max-width: 830px) {
   #icon {
     display: block;
 
@@ -518,7 +566,7 @@ span {
     width: 100vw;
     height: 100vh;
 
-    background-color: rgba(55, 52, 198);
+    background-color: var(--color-terciary);
     border-bottom: 0.7rem solid var(--color-secondary);
 
     transform: translateX(100%);
@@ -532,7 +580,7 @@ span {
 
     opacity: 0;
 
-    color: aliceblue;
+    color: var(--color-primary);
   }
 
   .mobile-menu {
@@ -643,7 +691,7 @@ span {
   }
 }
 
-@media screen and (max-width: 750px) {
+@media (max-width: 750px) {
   .serv-card-container {
     grid-template-columns: 1fr;
   }
@@ -664,12 +712,34 @@ span {
     padding-left: 0;
   }
 
+  .testimony-section {
+    height: 280vh;
+  }
+
   .testimony-section h1 {
     padding: 8rem 0 20rem 0;
   }
 }
 
-@media screen and (max-width: 530px) {
+@media (max-width: 720px) and (min-width: 700px) {
+  .div-main {
+    height: 150vh;
+  }
+
+  .div-second {
+    height: 250vh;
+  }
+
+  .div-second img {
+    width: 50%;
+  }
+
+  .testimony-section {
+    height: 380vh;
+  }
+}
+
+@media (max-width: 550px) {
   .div-second {
     height: 170vh;
   }
@@ -679,7 +749,7 @@ span {
   }
 }
 
-@media screen and (max-width: 450px) {
+@media (max-width: 450px) {
   .div-second {
     height: 150vh;
   }
@@ -689,13 +759,17 @@ span {
   }
 }
 
-@media screen and (max-width: 415px) {
+@media (max-width: 415px) {
   .div-second {
     height: 137vh;
   }
+
+  .testimony-section {
+    height: 220vh;
+  }
 }
 
-@media screen and (max-width: 395px) {
+@media (max-width: 395px) {
   .div-second {
     height: 155vh;
   }
@@ -705,7 +779,7 @@ span {
   }
 }
 
-@media screen and (max-width: 385px) {
+@media (max-width: 385px) {
   .div-second {
     height: 165vh;
   }
@@ -715,7 +789,7 @@ span {
   }
 }
 
-@media screen and (max-width: 340px) {
+@media (max-width: 340px) {
   .div-main {
     height: 150vh;
   }
