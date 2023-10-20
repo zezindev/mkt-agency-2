@@ -413,7 +413,7 @@ span {
   align-self: flex-start;
   font-size: var(--fs-header);
 
-  padding-bottom: 5rem;
+  padding-bottom: 2rem;
 
   color: var(--color-terciary);
 }
@@ -422,7 +422,8 @@ span {
   display: flex;
   justify-content: center;
 
-  margin-top: 13rem;
+  /* margin-top: 13rem; */
+  margin-top: 9rem;
 }
 
 .why-div-content {
@@ -760,6 +761,10 @@ span {
     font-size: var(--fs-body);
   }
 
+  .why-div-section h1 {
+    padding-bottom: 0;
+  }
+
   .testimony-section {
     height: 225vh;
   }
@@ -813,13 +818,13 @@ span {
   }
 }
 
-@media (max-width: 720px) {
+@media (max-width: 720px) and (min-width: 680px){
   .div-main {
-    height: 150vh;
+    height: 100vh;
   }
 
   .div-second {
-    height: 250vh;
+    height: 255vh;
   }
 
   .div-second img {
@@ -827,7 +832,7 @@ span {
   }
 
   .testimony-section {
-    height: 380vh;
+    height: 390vh;
   }
 }
 
