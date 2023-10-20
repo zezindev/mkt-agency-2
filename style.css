@@ -813,7 +813,7 @@ span {
   }
 }
 
-@media (max-width: 720px) and (min-width: 700px) {
+@media (max-width: 720px) {
   .div-main {
     height: 150vh;
   }
