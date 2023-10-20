@@ -479,6 +479,80 @@ span {
   z-index: -1;
 }
 
+.section-colapse {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin: 10rem 10%;
+}
+
+.section-colapse h1 {
+  align-self: flex-start;
+  margin-left: 10%;
+  margin-bottom: 5rem;
+
+  font-size: var(--fs-header);
+  color: var(--color-terciary);
+}
+
+.colapse {
+  width: 45%;
+  background: var(--color-primary);
+  color: var(--color-terciary);
+
+  border-radius: 1rem;
+
+  box-shadow: 0 0.8rem 3.2rem 0 rgba(0, 0, 0, 0.37);
+
+  margin: 1.5rem auto;
+  font-size: var(--fs-body);
+  font-weight: 800;
+}
+
+.card-header {
+  background: var(--color-terciary);
+  color: var(--color-primary);
+
+  padding: 2rem;
+
+  text-align: center;
+  font-size: var(--fs-header-sm);
+  cursor: pointer;
+
+  border-radius: 1rem;
+
+  position: relative;
+}
+
+.card-body {
+  display: none;
+  padding: 1rem;
+
+  text-align: center;
+}
+
+.colapse.open .card-header {
+  border-radius: 1rem 1rem 0 0;
+}
+
+.colapse.open .card-body {
+  display: block;
+  border-left: #3734c6 1px solid;
+  border-right: #3734c6 1px solid;
+  border-bottom: #3734c6 1px solid;
+  border-radius: 0 0 1rem 1rem;
+}
+
+.arrow {
+  transition: transform 0.4s;
+}
+
+.colapse.open .arrow {
+  transform: rotate(-180deg);
+}
+
 @media (max-width: 1350px) {
   .why-div-img {
     width: 50%;
@@ -528,6 +602,10 @@ span {
   .why-div-img img {
     width: 100%;
     margin: auto;
+  }
+
+  .colapse {
+    width: 100%;
   }
 }
 
@@ -711,7 +789,7 @@ span {
   }
 
   .div-second {
-    height: 140vh;
+    height: 150vh;
   }
 
   .div-second h1 {
@@ -727,7 +805,7 @@ span {
   }
 
   .testimony-section {
-    height: 280vh;
+    height: 300vh;
   }
 
   .testimony-section h1 {
